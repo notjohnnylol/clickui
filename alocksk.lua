@@ -392,7 +392,7 @@ function Library.SendNotification(settings)
     InnerFrame.Size = UDim2.new(1, 0, 0, 60)  
     InnerFrame.Position = UDim2.new(0, 0, 0, 0)  
     InnerFrame.BackgroundColor3 = Color3.fromRGB(51, 8, 0)
-    InnerFrame.BackgroundTransparency = 0.3
+    InnerFrame.BackgroundTransparency = 1
     InnerFrame.BorderSizePixel = 0
     InnerFrame.Name = "InnerFrame"
     InnerFrame.Parent = Notification
@@ -531,7 +531,7 @@ function Library:create_ui()
     Container.BorderColor3 = Color3.fromRGB(51, 8, 0)
     Container.AnchorPoint = Vector2.new(0.5, 0.5)
     Container.Name = 'Container'
-    Container.BackgroundTransparency = 0.4
+    Container.BackgroundTransparency = 0.05
     Container.BackgroundColor3 = Color3.fromRGB(51, 8, 0)
     Container.Position = UDim2.new(0.5, 0, 0.5, 0)
     Container.Size = UDim2.new(0, 0, 0, 0)
@@ -582,7 +582,7 @@ function Library:create_ui()
     ClientName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
     ClientName.TextColor3 = Color3.fromRGB(153, 68, 0)
     ClientName.TextTransparency = 0.20000000298023224
-    ClientName.Text = 'Balls.lol'
+    ClientName.Text = ' click bv'
     ClientName.Name = 'ClientName'
     ClientName.Size = UDim2.new(0, 31, 0, 13)
     ClientName.AnchorPoint = Vector2.new(0, 0.5)
@@ -620,7 +620,7 @@ function Library:create_ui()
     Icon.ScaleType = Enum.ScaleType.Fit
     Icon.BorderColor3 = Color3.fromRGB(51, 8, 0)
     Icon.AnchorPoint = Vector2.new(0, 0.5)
-    Icon.Image = 'rbxassetid://97405229498191'
+    Icon.Image = 'rbxassetid://102985234114068'
     Icon.BackgroundTransparency = 1
     Icon.Position = UDim2.new(0.021, 0,0.053, 0)
     Icon.Name = 'Icon'
@@ -631,7 +631,7 @@ function Library:create_ui()
     
     local Divider = Instance.new('Frame')
     Divider.Name = 'Divider'
-    Divider.BackgroundTransparency = 0.5
+    Divider.BackgroundTransparency = 0.4
     Divider.Position = UDim2.new(0.23499999940395355, 0, 0, 0)
     Divider.BorderColor3 = Color3.fromRGB(51, 8, 0)
     Divider.Size = UDim2.new(0, 1, 0, 479)
@@ -781,7 +781,7 @@ function Library:create_ui()
                     }):Play()    
 
                     TweenService:Create(object, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundTransparency = 0.5
+                        BackgroundTransparency = 0.7
                     }):Play()
 
                     TweenService:Create(object.TextLabel, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
@@ -992,7 +992,7 @@ function Library:create_ui()
             local Module = Instance.new('Frame')
             Module.ClipsDescendants = true
             Module.BorderColor3 = Color3.fromRGB(51, 8, 0)
-            Module.BackgroundTransparency = 0.5
+            Module.BackgroundTransparency = 0.2
             Module.Position = UDim2.new(0.004115226212888956, 0, 0, 0)
             Module.Name = 'Module'
             Module.Size = UDim2.new(0, 241, 0, 93)
@@ -1089,7 +1089,7 @@ function Library:create_ui()
             Toggle.BorderColor3 = Color3.fromRGB(51, 8, 0)
             Toggle.Size = UDim2.new(0, 25, 0, 12)
             Toggle.BorderSizePixel = 0
-            Toggle.BackgroundColor3 = Color3.fromRGB(51, 8, 0)
+            Toggle.BackgroundColor3 = Color3.fromRGB(128, 51, 0)
             Toggle.Parent = Header
             
             local UICorner = Instance.new('UICorner')
@@ -1104,7 +1104,7 @@ function Library:create_ui()
             Circle.Name = 'Circle'
             Circle.Size = UDim2.new(0, 12, 0, 12)
             Circle.BorderSizePixel = 0
-            Circle.BackgroundColor3 = Color3.fromRGB(51, 8, 0)
+            Circle.BackgroundColor3 = Color3.fromRGB(128, 51, 0)
             Circle.Parent = Toggle
             
             local UICorner = Instance.new('UICorner')
@@ -1191,11 +1191,11 @@ function Library:create_ui()
                     }):Play()
 
                     TweenService:Create(Toggle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(153, 68, 0)
+                        BackgroundColor3 = Color3.fromRGB(128, 51, 0)
                     }):Play()
 
                     TweenService:Create(Circle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(153, 68, 0),
+                        BackgroundColor3 = Color3.fromRGB(255, 140, 0),
                         Position = UDim2.fromScale(0.53, 0.5)
                     }):Play()
                 else
@@ -1204,11 +1204,11 @@ function Library:create_ui()
                     }):Play()
 
                     TweenService:Create(Toggle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(51, 8, 0)
+                        BackgroundColor3 = Color3.fromRGB(128, 51, 0)
                     }):Play()
 
                     TweenService:Create(Circle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(51, 8, 0),
+                        BackgroundColor3 = Color3.fromRGB(128, 51, 0),
                         Position = UDim2.fromScale(0, 0.5)
                     }):Play()
                 end
